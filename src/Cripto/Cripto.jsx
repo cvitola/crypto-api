@@ -66,12 +66,12 @@ const Cripto = ({info}) => {
           <p>{ `${detail.market_data?.price_change_percentage_24h} %`} last 24hs</p>
           </Item>
           <Item>
-            <p>How many coins can i get with my ARS ?</p>
+            <i>How many coins could I get with my ARS ?</i>
             <input onChange={handleOnChangeArs}/>
           </Item>
           <Item>
-            <label></label>
-            <p>{(parseFloat(ars)/parseFloat(detail.market_data?.current_price.ars)).toFixed(10)}</p>
+            <strong>{(parseFloat(ars)/parseFloat(detail.market_data?.current_price.ars)).toFixed(10)}</strong>
+            <strong color='#080080'>{info.symbol.toUpperCase()}</strong>
           </Item>
           
         </Detalle>
@@ -143,4 +143,10 @@ const Item = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
+
+  i{
+    text-align: justify;
+    font-size: 14px;
+
+  }
   `;
