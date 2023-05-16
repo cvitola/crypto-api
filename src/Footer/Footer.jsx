@@ -5,7 +5,7 @@ import { FaFacebookMessenger, FaWhatsapp, FaLinkedin, FaTelegram } from "react-i
 const Footer = () => {
   return (
     <Container>
-        <h2>Contactame</h2>
+        <h2>CONTACTAME</h2>
         <ul>
             <li><FaFacebookMessenger/></li>
             <li><FaWhatsapp /></li>
@@ -22,13 +22,13 @@ export default Footer;
 const Container = styled.footer`
     background: #2A2A2A;
     color: #FAFAFA;
-    margin-top: auto;
+    /*margin-top: auto;*/
     font-family: 'Patua One', cursive;
     text-align: center;
     width: 100%;
 
     h2{
-        font-size: calc(4vw + 4vh + 2vmin);
+        font-size: calc(2vw + 2vh + 2vmin);
         padding: 10px;
         margin: 10px;
     }
@@ -38,15 +38,15 @@ const Container = styled.footer`
         justify-content: center;
         padding: 0;
         margin: 0;
-        font-size: calc(2vw + 2vh + 1vmin);
+        font-size: calc(1.5vw + 1.5vh + 1vmin);
     }
 
     ul li{
-        padding: 15px;
+        padding: 10px;
     }
 
     p{
-        margin: 20px 0 20px 0;
+        margin: 10px  10px ;
     }
     `;
 
